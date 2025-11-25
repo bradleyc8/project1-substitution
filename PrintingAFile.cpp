@@ -7,7 +7,7 @@ using namespace std;
 int main() {
         
         string filename;
-	cout << "What is the file's name?: ";
+		cout << "What is the file's name?: ";
         cin >> filename;
         ifstream inputFile;
         inputFile.open(filename);
@@ -17,10 +17,10 @@ int main() {
           return(0);
         }
 	
-	// Was just using to see where the code was messing u
-	//cout << "Checkpoint 1" << endl;
+		// Was just using to see where the code was messing u
+		//cout << "Checkpoint 1" << endl;
 	
-	string line;	
+		string line;	
         while(getline(inputFile, line)){
           cout << line << endl;
         }
