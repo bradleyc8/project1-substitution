@@ -1,6 +1,7 @@
 #include <fstream>
 #include <iostream>
 #include <string>
+#include <sstream>
 using namespace std;
 
 
@@ -20,9 +21,12 @@ int main() {
 	// Was just using to see where the code was messing u
 	//cout << "Checkpoint 1" << endl;
 	
-	string line;	
-        while(getline(inputFile, line)){
-          cout << line << endl;
+       while(getline(inputFile, line)){
+		string token;
+	  	streamstring >> line;
+		while(ss >> token){
+			cout << token << endl;
+		} 
         }
 
         inputFile.close();
